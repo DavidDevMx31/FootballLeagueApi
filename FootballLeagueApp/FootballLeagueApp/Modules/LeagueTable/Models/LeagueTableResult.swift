@@ -24,3 +24,16 @@ struct LeagueTableResult: Decodable {
         case results = "table"
     }
 }
+
+extension LeagueTableItem {
+    
+    init(resultItem: LeagueTableResult.ResultItem) {
+        self.id = Int(resultItem.idTeam)!
+        self.rank = resultItem.intRank
+        self.teamName = resultItem.strTeam
+        self.badgeUrl = resultItem.strBadge
+        self.wins = Int(resultItem.intWin)!
+        self.draws = Int(resultItem.intDraw)!
+        self.losses = Int(resultItem.intLoss)!
+    }
+}
