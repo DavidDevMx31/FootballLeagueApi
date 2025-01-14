@@ -24,6 +24,7 @@
 		B48C70C42D36D4DB0003C9CD /* TeamDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C32D36D4DB0003C9CD /* TeamDetailViewModel.swift */; };
 		B48C70C62D36D5450003C9CD /* TeamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C52D36D5450003C9CD /* TeamDetail.swift */; };
 		B48C70C82D36D6680003C9CD /* TeamDetailSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C72D36D6680003C9CD /* TeamDetailSource.swift */; };
+		B48C70CA2D36D7130003C9CD /* SearchTeamsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C92D36D7130003C9CD /* SearchTeamsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B48C70C32D36D4DB0003C9CD /* TeamDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewModel.swift; sourceTree = "<group>"; };
 		B48C70C52D36D5450003C9CD /* TeamDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetail.swift; sourceTree = "<group>"; };
 		B48C70C72D36D6680003C9CD /* TeamDetailSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailSource.swift; sourceTree = "<group>"; };
+		B48C70C92D36D7130003C9CD /* SearchTeamsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				B48C70C52D36D5450003C9CD /* TeamDetail.swift */,
+				B48C70C92D36D7130003C9CD /* SearchTeamsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48C70B02D36BD390003C9CD /* LeagueTableView.swift in Sources */,
+				B48C70CA2D36D7130003C9CD /* SearchTeamsResponse.swift in Sources */,
 				B48C70BA2D36C45C0003C9CD /* LeagueTableItem.swift in Sources */,
 				B48C70BC2D36C5770003C9CD /* LeagueTableResult.swift in Sources */,
 				B48C70C62D36D5450003C9CD /* TeamDetail.swift in Sources */,
