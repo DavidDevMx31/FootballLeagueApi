@@ -8,8 +8,45 @@
 import SwiftUI
 
 struct LeagueTableView: View {
+    @StateObject var viewModel = LeagueTableViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                Section {
+                    ForEach(viewModel.items) { item in
+                        NavigationLink(destination: Text(item.teamName)) {
+                            Text(item.teamName)
+                        }
+                    }
+                } header: {
+                    tableHeaderView
+                } footer: {
+                    Text("Elements: \(viewModel.items.count)")
+                }
+            }
+            .navigationTitle("League Table")
+        }
+        .task {
+            await viewModel.fetchLookupTable()
+        }
+    }
+    
+    var tableHeaderView: some View {
+        HStack(spacing: 8) {
+            Text("Rank")
+            
+            Text("Team name")
+            
+            Spacer()
+            
+            Text("W")
+                .frame(width: 28)
+            Text("D")
+                .frame(width: 28)
+            Text("L")
+                .frame(width: 28)
+        }
     }
 }
 
