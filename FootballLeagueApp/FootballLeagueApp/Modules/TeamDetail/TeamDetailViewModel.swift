@@ -9,6 +9,7 @@ import Foundation
 
 final class TeamDetailViewModel: ObservableObject {
     @Published private(set) var teamDetail: TeamDetail?
+    @Published private(set) var fetchState = FetchingState.inProgress
     private let source: TeamDetailSource
     
     init(source: TeamDetailSource = TeamDetailApiSource()) {
@@ -25,5 +26,6 @@ final class TeamDetailViewModel: ObservableObject {
         } else {
             teamDetail = nil
         }
+        self.fetchState = .completed
     }
 }

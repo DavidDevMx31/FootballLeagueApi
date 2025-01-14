@@ -26,6 +26,7 @@
 		B48C70C82D36D6680003C9CD /* TeamDetailSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C72D36D6680003C9CD /* TeamDetailSource.swift */; };
 		B48C70CA2D36D7130003C9CD /* SearchTeamsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C92D36D7130003C9CD /* SearchTeamsResponse.swift */; };
 		B48C70CC2D36E6DB0003C9CD /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CB2D36E6DB0003C9CD /* TeamDetailView.swift */; };
+		B48C70CE2D37048E0003C9CD /* FetchingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CD2D37048E0003C9CD /* FetchingState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B48C70C72D36D6680003C9CD /* TeamDetailSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailSource.swift; sourceTree = "<group>"; };
 		B48C70C92D36D7130003C9CD /* SearchTeamsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamsResponse.swift; sourceTree = "<group>"; };
 		B48C70CB2D36E6DB0003C9CD /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
+		B48C70CD2D37048E0003C9CD /* FetchingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 			children = (
 				B48C70C52D36D5450003C9CD /* TeamDetail.swift */,
 				B48C70C92D36D7130003C9CD /* SearchTeamsResponse.swift */,
+				B48C70CD2D37048E0003C9CD /* FetchingState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				B48C70C42D36D4DB0003C9CD /* TeamDetailViewModel.swift in Sources */,
 				B48C70B62D36C0310003C9CD /* LeagueTableViewModel.swift in Sources */,
 				B48C70C02D36CC6C0003C9CD /* TableSortByProperty.swift in Sources */,
+				B48C70CE2D37048E0003C9CD /* FetchingState.swift in Sources */,
 				B48C70C82D36D6680003C9CD /* TeamDetailSource.swift in Sources */,
 				B48C70B82D36C4260003C9CD /* LeagueTableSource.swift in Sources */,
 				B48C707F2D36BB540003C9CD /* FootballLeagueAppApp.swift in Sources */,
