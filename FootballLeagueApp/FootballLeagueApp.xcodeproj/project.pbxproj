@@ -20,6 +20,7 @@
 		B48C70BC2D36C5770003C9CD /* LeagueTableResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70BB2D36C5770003C9CD /* LeagueTableResult.swift */; };
 		B48C70BE2D36C9790003C9CD /* LeagueTableItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70BD2D36C9790003C9CD /* LeagueTableItemView.swift */; };
 		B48C70C02D36CC6C0003C9CD /* TableSortByProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70BF2D36CC6C0003C9CD /* TableSortByProperty.swift */; };
+		B48C70C22D36CE570003C9CD /* LeagueTableFiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C12D36CE570003C9CD /* LeagueTableFiltersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B48C70BB2D36C5770003C9CD /* LeagueTableResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableResult.swift; sourceTree = "<group>"; };
 		B48C70BD2D36C9790003C9CD /* LeagueTableItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableItemView.swift; sourceTree = "<group>"; };
 		B48C70BF2D36CC6C0003C9CD /* TableSortByProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSortByProperty.swift; sourceTree = "<group>"; };
+		B48C70C12D36CE570003C9CD /* LeagueTableFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableFiltersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				B48C70AF2D36BD390003C9CD /* LeagueTableView.swift */,
 				B48C70BD2D36C9790003C9CD /* LeagueTableItemView.swift */,
+				B48C70C12D36CE570003C9CD /* LeagueTableFiltersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				B48C70B02D36BD390003C9CD /* LeagueTableView.swift in Sources */,
 				B48C70BA2D36C45C0003C9CD /* LeagueTableItem.swift in Sources */,
 				B48C70BC2D36C5770003C9CD /* LeagueTableResult.swift in Sources */,
+				B48C70C22D36CE570003C9CD /* LeagueTableFiltersView.swift in Sources */,
 				B48C70B62D36C0310003C9CD /* LeagueTableViewModel.swift in Sources */,
 				B48C70C02D36CC6C0003C9CD /* TableSortByProperty.swift in Sources */,
 				B48C70B82D36C4260003C9CD /* LeagueTableSource.swift in Sources */,
