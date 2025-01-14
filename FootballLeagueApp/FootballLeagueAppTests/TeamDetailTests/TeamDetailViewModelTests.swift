@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import FootballLeagueApp
 
 final class TeamDetailViewModelTests: XCTestCase {
 
@@ -17,4 +18,11 @@ final class TeamDetailViewModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func test_viewModelFetchingStateInitialStatus() {
+        let fetchingStateExpectedValue = FetchingState.inProgress
+        let sut = TeamDetailViewModel()
+        
+        XCTAssertEqual(sut.fetchState, FetchingState.inProgress,
+                       "fetchState must be equal to \(fetchingStateExpectedValue) on initialization")
+    }
 }
