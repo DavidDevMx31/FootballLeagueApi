@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct TeamDetailView: View {
-    @StateObject var detail = TeamDetailViewModel()
+    @StateObject var viewModel = TeamDetailViewModel()
     let name: String
     
     var body: some View {
-        Text(name)
-            .font(.title)
-            .navigationTitle(name)
-            .task {
-                await detail.fetchDetail(for: name)
+        VStack(alignment: .center, spacing: 16) {
+            if viewModel.fetchState == .inProgress {
+                //Activity Indicator, loading view, etc...
+                Spacer()
+                Text("Loading data...")
+                Spacer()
+            } else if viewModel.fetchState == .completed {
+                TeamDataView(data: viewModel.teamDetail)
             }
+        }
+        .navigationTitle(name)
+        .task {
+            await viewModel.fetchDetail(for: name)
+        }
     }
 }
 
