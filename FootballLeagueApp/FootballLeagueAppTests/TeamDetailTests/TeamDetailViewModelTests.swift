@@ -51,4 +51,12 @@ final class TeamDetailViewModelTests: XCTestCase {
         XCTAssertNil(sut.teamDetail,
                      "TeamDetail object must be nil because more than one item was found")
     }
+    
+    func test_sourceReturnsZeroItems_teamDetailEqualsNil() async {
+        let sut = TeamDetailViewModel(source: TeamDetailSourceStub())
+        await sut.fetchDetail(for: "name")
+        
+        XCTAssertNil(sut.teamDetail,
+                        "TeamDetail object must be nil because no item was found")
+    }
 }
