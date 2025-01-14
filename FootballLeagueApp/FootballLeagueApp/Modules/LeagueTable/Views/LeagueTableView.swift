@@ -16,7 +16,7 @@ struct LeagueTableView: View {
                 Section {
                     ForEach(viewModel.items) { item in
                         NavigationLink(destination: Text(item.teamName)) {
-                            Text(item.teamName)
+                            LeagueTableItemView(item: item)
                         }
                     }
                 } header: {
