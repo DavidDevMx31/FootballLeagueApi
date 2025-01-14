@@ -9,12 +9,26 @@ import SwiftUI
 
 struct LeagueTableView: View {
     @StateObject var viewModel = LeagueTableViewModel()
+    @State private var sortBy = TableSortByProperty.rank
+    
+    private var sortedItems: [LeagueTableItem] {
+        switch sortBy {
+        case .rank:
+            return viewModel.items.sorted(using: KeyPathComparator(\.rank))
+        case .win:
+            return viewModel.items.sorted(using: KeyPathComparator(\.wins))
+        case .draw:
+            return viewModel.items.sorted(using: KeyPathComparator(\.draws))
+        case .loss:
+            return viewModel.items.sorted(using: KeyPathComparator(\.losses))
+        }
+    }
     
     var body: some View {
         NavigationView {
             List {
                 Section {
-                    ForEach(viewModel.items) { item in
+                    ForEach(sortedItems) { item in
                         NavigationLink(destination: Text(item.teamName)) {
                             LeagueTableItemView(item: item)
                         }
@@ -22,7 +36,7 @@ struct LeagueTableView: View {
                 } header: {
                     tableHeaderView
                 } footer: {
-                    Text("Elements: \(viewModel.items.count)")
+                    Text("Elements sorted by: \(sortBy.rawValue)")
                 }
             }
             .navigationTitle("League Table")
