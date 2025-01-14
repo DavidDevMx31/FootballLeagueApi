@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol TeamDetailSource {
+public protocol TeamDetailSource {
     func fetchTeamDetailBy(name: String) async -> [TeamDetail]
 }
 
