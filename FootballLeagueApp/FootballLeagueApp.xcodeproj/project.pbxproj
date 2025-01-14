@@ -23,6 +23,7 @@
 		B48C70C22D36CE570003C9CD /* LeagueTableFiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C12D36CE570003C9CD /* LeagueTableFiltersView.swift */; };
 		B48C70C42D36D4DB0003C9CD /* TeamDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C32D36D4DB0003C9CD /* TeamDetailViewModel.swift */; };
 		B48C70C62D36D5450003C9CD /* TeamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C52D36D5450003C9CD /* TeamDetail.swift */; };
+		B48C70C82D36D6680003C9CD /* TeamDetailSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C72D36D6680003C9CD /* TeamDetailSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		B48C70C12D36CE570003C9CD /* LeagueTableFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableFiltersView.swift; sourceTree = "<group>"; };
 		B48C70C32D36D4DB0003C9CD /* TeamDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewModel.swift; sourceTree = "<group>"; };
 		B48C70C52D36D5450003C9CD /* TeamDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetail.swift; sourceTree = "<group>"; };
+		B48C70C72D36D6680003C9CD /* TeamDetailSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		B48C70B42D36BD890003C9CD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B48C70C72D36D6680003C9CD /* TeamDetailSource.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				B48C70C42D36D4DB0003C9CD /* TeamDetailViewModel.swift in Sources */,
 				B48C70B62D36C0310003C9CD /* LeagueTableViewModel.swift in Sources */,
 				B48C70C02D36CC6C0003C9CD /* TableSortByProperty.swift in Sources */,
+				B48C70C82D36D6680003C9CD /* TeamDetailSource.swift in Sources */,
 				B48C70B82D36C4260003C9CD /* LeagueTableSource.swift in Sources */,
 				B48C707F2D36BB540003C9CD /* FootballLeagueAppApp.swift in Sources */,
 				B48C70BE2D36C9790003C9CD /* LeagueTableItemView.swift in Sources */,
