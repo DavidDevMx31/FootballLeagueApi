@@ -30,7 +30,8 @@ struct LeagueTableView: View {
             List {
                 Section {
                     ForEach(sortedItems) { item in
-                        NavigationLink(destination: Text(item.teamName)) {
+                        NavigationLink(destination:
+                                        TeamDetailView(name: item.teamName)) {
                             LeagueTableItemView(item: item)
                         }
                     }
