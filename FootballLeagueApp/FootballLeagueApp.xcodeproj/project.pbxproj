@@ -28,6 +28,7 @@
 		B48C70CC2D36E6DB0003C9CD /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CB2D36E6DB0003C9CD /* TeamDetailView.swift */; };
 		B48C70CE2D37048E0003C9CD /* FetchingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CD2D37048E0003C9CD /* FetchingState.swift */; };
 		B48C70D02D3705B80003C9CD /* TeamDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CF2D3705B80003C9CD /* TeamDataView.swift */; };
+		B48C70D32D370F580003C9CD /* TeamDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70D22D370F580003C9CD /* TeamDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		B48C70CB2D36E6DB0003C9CD /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 		B48C70CD2D37048E0003C9CD /* FetchingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingState.swift; sourceTree = "<group>"; };
 		B48C70CF2D3705B80003C9CD /* TeamDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataView.swift; sourceTree = "<group>"; };
+		B48C70D22D370F580003C9CD /* TeamDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		B48C708E2D36BB5E0003C9CD /* FootballLeagueAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				B48C70D12D370F370003C9CD /* TeamDetailTests */,
 				B48C708F2D36BB5E0003C9CD /* FootballLeagueAppTests.swift */,
 			);
 			path = FootballLeagueAppTests;
@@ -239,6 +242,14 @@
 				B48C70C72D36D6680003C9CD /* TeamDetailSource.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B48C70D12D370F370003C9CD /* TeamDetailTests */ = {
+			isa = PBXGroup;
+			children = (
+				B48C70D22D370F580003C9CD /* TeamDetailViewModelTests.swift */,
+			);
+			path = TeamDetailTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48C70D32D370F580003C9CD /* TeamDetailViewModelTests.swift in Sources */,
 				B48C70902D36BB5E0003C9CD /* FootballLeagueAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
