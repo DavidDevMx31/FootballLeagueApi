@@ -22,3 +22,17 @@ struct SearchTeamsResponse: Decodable {
         let strDescriptionEN: String
     }
 }
+
+extension TeamDetail {
+    init(response: SearchTeamsResponse.TeamData) {
+        self.id = Int(response.idTeam)!
+        self.name = response.strTeam
+        self.badgeUrlString = response.strBadge
+        self.country = response.strCountry
+        self.formedYear = response.intFormedYear
+        self.keywords = response.strKeywords
+        self.location = response.strLocation
+        self.league = response.strLeague
+        self.description = response.strDescriptionEN
+    }
+}
