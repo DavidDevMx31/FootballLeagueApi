@@ -13,7 +13,7 @@
 		B48C70902D36BB5E0003C9CD /* FootballLeagueAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C708F2D36BB5E0003C9CD /* FootballLeagueAppTests.swift */; };
 		B48C709A2D36BB5E0003C9CD /* FootballLeagueAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70992D36BB5E0003C9CD /* FootballLeagueAppUITests.swift */; };
 		B48C709C2D36BB5E0003C9CD /* FootballLeagueAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C709B2D36BB5E0003C9CD /* FootballLeagueAppUITestsLaunchTests.swift */; };
-		B48C70A92D36BB920003C9CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70A82D36BB920003C9CD /* ContentView.swift */; };
+		B48C70B02D36BD390003C9CD /* LeagueTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70AF2D36BD390003C9CD /* LeagueTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		B48C70952D36BB5E0003C9CD /* FootballLeagueAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootballLeagueAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48C70992D36BB5E0003C9CD /* FootballLeagueAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballLeagueAppUITests.swift; sourceTree = "<group>"; };
 		B48C709B2D36BB5E0003C9CD /* FootballLeagueAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballLeagueAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B48C70A82D36BB920003C9CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B48C70AF2D36BD390003C9CD /* LeagueTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 		B48C707D2D36BB540003C9CD /* FootballLeagueApp */ = {
 			isa = PBXGroup;
 			children = (
+				B48C70AA2D36BC8F0003C9CD /* Modules */,
 				B48C707E2D36BB540003C9CD /* FootballLeagueAppApp.swift */,
-				B48C70A82D36BB920003C9CD /* ContentView.swift */,
 				B48C70822D36BB5D0003C9CD /* Assets.xcassets */,
 				B48C70842D36BB5D0003C9CD /* Preview Content */,
 			);
@@ -125,6 +125,78 @@
 				B48C709B2D36BB5E0003C9CD /* FootballLeagueAppUITestsLaunchTests.swift */,
 			);
 			path = FootballLeagueAppUITests;
+			sourceTree = "<group>";
+		};
+		B48C70AA2D36BC8F0003C9CD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B48C70B12D36BD6D0003C9CD /* TeamDetail */,
+				B48C70AB2D36BCF70003C9CD /* LeagueTable */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B48C70AB2D36BCF70003C9CD /* LeagueTable */ = {
+			isa = PBXGroup;
+			children = (
+				B48C70AE2D36BD1B0003C9CD /* Services */,
+				B48C70AD2D36BD160003C9CD /* Models */,
+				B48C70AC2D36BD0D0003C9CD /* Views */,
+			);
+			path = LeagueTable;
+			sourceTree = "<group>";
+		};
+		B48C70AC2D36BD0D0003C9CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B48C70AF2D36BD390003C9CD /* LeagueTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B48C70AD2D36BD160003C9CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B48C70AE2D36BD1B0003C9CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B48C70B12D36BD6D0003C9CD /* TeamDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B48C70B42D36BD890003C9CD /* Services */,
+				B48C70B32D36BD840003C9CD /* Models */,
+				B48C70B22D36BD7F0003C9CD /* Views */,
+			);
+			path = TeamDetail;
+			sourceTree = "<group>";
+		};
+		B48C70B22D36BD7F0003C9CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B48C70B32D36BD840003C9CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B48C70B42D36BD890003C9CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48C70A92D36BB920003C9CD /* ContentView.swift in Sources */,
+				B48C70B02D36BD390003C9CD /* LeagueTableView.swift in Sources */,
 				B48C707F2D36BB540003C9CD /* FootballLeagueAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
