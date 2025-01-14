@@ -15,4 +15,6 @@ struct LeagueTableItem: Identifiable {
     let wins: Int
     let draws: Int
     let losses: Int
+    
+    static let example = LeagueTableItem(id: 1, rank: "1", teamName: "Example name", badgeUrl: "", wins: 0, draws: 0, losses: 0)
 }
