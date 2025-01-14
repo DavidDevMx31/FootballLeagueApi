@@ -27,6 +27,7 @@
 		B48C70CA2D36D7130003C9CD /* SearchTeamsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70C92D36D7130003C9CD /* SearchTeamsResponse.swift */; };
 		B48C70CC2D36E6DB0003C9CD /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CB2D36E6DB0003C9CD /* TeamDetailView.swift */; };
 		B48C70CE2D37048E0003C9CD /* FetchingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CD2D37048E0003C9CD /* FetchingState.swift */; };
+		B48C70D02D3705B80003C9CD /* TeamDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CF2D3705B80003C9CD /* TeamDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B48C70C92D36D7130003C9CD /* SearchTeamsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamsResponse.swift; sourceTree = "<group>"; };
 		B48C70CB2D36E6DB0003C9CD /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 		B48C70CD2D37048E0003C9CD /* FetchingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingState.swift; sourceTree = "<group>"; };
+		B48C70CF2D3705B80003C9CD /* TeamDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				B48C70CB2D36E6DB0003C9CD /* TeamDetailView.swift */,
+				B48C70CF2D3705B80003C9CD /* TeamDataView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				B48C70CC2D36E6DB0003C9CD /* TeamDetailView.swift in Sources */,
 				B48C70C42D36D4DB0003C9CD /* TeamDetailViewModel.swift in Sources */,
 				B48C70B62D36C0310003C9CD /* LeagueTableViewModel.swift in Sources */,
+				B48C70D02D3705B80003C9CD /* TeamDataView.swift in Sources */,
 				B48C70C02D36CC6C0003C9CD /* TableSortByProperty.swift in Sources */,
 				B48C70CE2D37048E0003C9CD /* FetchingState.swift in Sources */,
 				B48C70C82D36D6680003C9CD /* TeamDetailSource.swift in Sources */,
