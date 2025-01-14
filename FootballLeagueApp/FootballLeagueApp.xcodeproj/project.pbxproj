@@ -29,6 +29,7 @@
 		B48C70CE2D37048E0003C9CD /* FetchingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CD2D37048E0003C9CD /* FetchingState.swift */; };
 		B48C70D02D3705B80003C9CD /* TeamDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70CF2D3705B80003C9CD /* TeamDataView.swift */; };
 		B48C70D32D370F580003C9CD /* TeamDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70D22D370F580003C9CD /* TeamDetailViewModelTests.swift */; };
+		B48C70D62D3711F10003C9CD /* TeamDetailSourceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C70D52D3711F10003C9CD /* TeamDetailSourceStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		B48C70CD2D37048E0003C9CD /* FetchingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingState.swift; sourceTree = "<group>"; };
 		B48C70CF2D3705B80003C9CD /* TeamDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataView.swift; sourceTree = "<group>"; };
 		B48C70D22D370F580003C9CD /* TeamDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewModelTests.swift; sourceTree = "<group>"; };
+		B48C70D52D3711F10003C9CD /* TeamDetailSourceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailSourceStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,9 +249,18 @@
 		B48C70D12D370F370003C9CD /* TeamDetailTests */ = {
 			isa = PBXGroup;
 			children = (
+				B48C70D42D3711D20003C9CD /* TestDoubles */,
 				B48C70D22D370F580003C9CD /* TeamDetailViewModelTests.swift */,
 			);
 			path = TeamDetailTests;
+			sourceTree = "<group>";
+		};
+		B48C70D42D3711D20003C9CD /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				B48C70D52D3711F10003C9CD /* TeamDetailSourceStub.swift */,
+			);
+			path = TestDoubles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48C70D32D370F580003C9CD /* TeamDetailViewModelTests.swift in Sources */,
+				B48C70D62D3711F10003C9CD /* TeamDetailSourceStub.swift in Sources */,
 				B48C70902D36BB5E0003C9CD /* FootballLeagueAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
