@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LeagueTableItem {
+struct LeagueTableItem: Identifiable {
     let id: Int
     let rank: String
     let teamName: String
