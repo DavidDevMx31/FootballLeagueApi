@@ -22,7 +22,7 @@ final class TeamDetailViewModelTests: XCTestCase {
         let fetchingStateExpectedValue = FetchingState.inProgress
         let sut = TeamDetailViewModel()
         
-        XCTAssertEqual(sut.fetchState, FetchingState.inProgress,
+        XCTAssertEqual(sut.fetchState, fetchingStateExpectedValue,
                        "fetchState must be equal to \(fetchingStateExpectedValue) on initialization")
     }
 }
