@@ -25,4 +25,13 @@ final class TeamDetailViewModelTests: XCTestCase {
         XCTAssertEqual(sut.fetchState, fetchingStateExpectedValue,
                        "fetchState must be equal to \(fetchingStateExpectedValue) on initialization")
     }
+    
+    func test_viewModelFetchingStateAfterCompletingFetch() async {
+        let fetchingStateExpectedValue = FetchingState.completed
+        let sut = TeamDetailViewModel(source: TeamDetailSourceStub())
+        await sut.fetchDetail(for: "name")
+        
+        XCTAssertEqual(sut.fetchState, fetchingStateExpectedValue,
+                       "fetchState must be equal to \(fetchingStateExpectedValue) after completing fetch")
+    }
 }
