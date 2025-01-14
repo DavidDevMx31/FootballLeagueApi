@@ -42,4 +42,13 @@ final class TeamDetailViewModelTests: XCTestCase {
         
         XCTAssertNotNil(sut.teamDetail, "TeamDetail object must not be nil")
     }
+    
+    func test_sourceReturnsMoreThanOneItem_teamDetailEqualsNil() async {
+        let stubItems = Array(repeating: TeamDetail.example, count: 3)
+        let sut = TeamDetailViewModel(source: TeamDetailSourceStub(stubItems: stubItems))
+        await sut.fetchDetail(for: "name")
+        
+        XCTAssertNil(sut.teamDetail,
+                     "TeamDetail object must be nil because more than one item was found")
+    }
 }
