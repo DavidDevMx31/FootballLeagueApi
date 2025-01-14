@@ -10,6 +10,7 @@ import SwiftUI
 struct LeagueTableView: View {
     @StateObject var viewModel = LeagueTableViewModel()
     @State private var sortBy = TableSortByProperty.rank
+    @State private var showingFiltersSheet = false
     
     private var sortedItems: [LeagueTableItem] {
         switch sortBy {
@@ -36,10 +37,26 @@ struct LeagueTableView: View {
                 } header: {
                     tableHeaderView
                 } footer: {
-                    Text("Elements sorted by: \(sortBy.rawValue)")
+                    HStack(alignment: .center) {
+                        Text("Elements sorted by: \(sortBy.rawValue)")
+                        Spacer()
+                        Text("Order: Ascending")
+                    }
                 }
             }
             .navigationTitle("League Table")
+            .sheet(isPresented: $showingFiltersSheet) {
+                LeagueTableFiltersView(currentFilter: $sortBy,
+                                 isPresented: $showingFiltersSheet)
+                .presentationDetents([.fraction(0.4)])
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Sort by") {
+                        showingFiltersSheet.toggle()
+                    }
+                }
+            }
         }
         .task {
             await viewModel.fetchLookupTable()
