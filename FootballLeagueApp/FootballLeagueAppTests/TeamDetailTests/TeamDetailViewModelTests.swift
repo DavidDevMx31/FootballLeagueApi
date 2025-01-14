@@ -34,4 +34,12 @@ final class TeamDetailViewModelTests: XCTestCase {
         XCTAssertEqual(sut.fetchState, fetchingStateExpectedValue,
                        "fetchState must be equal to \(fetchingStateExpectedValue) after completing fetch")
     }
+    
+    func test_oneItemFound_teamDetailIsAssigned() async {
+        let stubItems = [TeamDetail.example]
+        let sut = TeamDetailViewModel(source: TeamDetailSourceStub(stubItems: stubItems))
+        await sut.fetchDetail(for: "name")
+        
+        XCTAssertNotNil(sut.teamDetail, "TeamDetail object must not be nil")
+    }
 }
